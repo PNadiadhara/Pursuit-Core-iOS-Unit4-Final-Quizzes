@@ -17,6 +17,11 @@
 		577118DA22037B5B00B9DD0B /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577118D922037B5B00B9DD0B /* DataPersistenceManager.swift */; };
 		577118DD22037B8E00B9DD0B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577118DC22037B8E00B9DD0B /* Date+Extensions.swift */; };
 		577118DF22037BAA00B9DD0B /* String+DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577118DE22037BAA00B9DD0B /* String+DateExtensions.swift */; };
+		BF60BD902204A41300C319CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BD8F2204A41300C319CC /* TabBarViewController.swift */; };
+		BF60BD932204A44600C319CC /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BD922204A44600C319CC /* QuizViewController.swift */; };
+		BF60BD952204A46300C319CC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BD942204A46300C319CC /* SearchViewController.swift */; };
+		BF60BD972204A47600C319CC /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BD962204A47600C319CC /* CreateViewController.swift */; };
+		BF60BD992204A47F00C319CC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BD982204A47F00C319CC /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		577118D922037B5B00B9DD0B /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
 		577118DC22037B8E00B9DD0B /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		577118DE22037BAA00B9DD0B /* String+DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateExtensions.swift"; sourceTree = "<group>"; };
+		BF60BD8F2204A41300C319CC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		BF60BD922204A44600C319CC /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		BF60BD942204A46300C319CC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BF60BD962204A47600C319CC /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		BF60BD982204A47F00C319CC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 				577118DB22037B7C00B9DD0B /* Date Utilities */,
 				577118D322037A7300B9DD0B /* Supporting Files */,
 				577118CC2203796B00B9DD0B /* Info.plist */,
+				BF60BD912204A41700C319CC /* Controller */,
 			);
 			path = Quizzes;
 			sourceTree = "<group>";
@@ -109,6 +120,18 @@
 				577118DE22037BAA00B9DD0B /* String+DateExtensions.swift */,
 			);
 			path = "Date Utilities";
+			sourceTree = "<group>";
+		};
+		BF60BD912204A41700C319CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF60BD8F2204A41300C319CC /* TabBarViewController.swift */,
+				BF60BD922204A44600C319CC /* QuizViewController.swift */,
+				BF60BD942204A46300C319CC /* SearchViewController.swift */,
+				BF60BD962204A47600C319CC /* CreateViewController.swift */,
+				BF60BD982204A47F00C319CC /* ProfileViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,11 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF60BD972204A47600C319CC /* CreateViewController.swift in Sources */,
+				BF60BD952204A46300C319CC /* SearchViewController.swift in Sources */,
+				BF60BD902204A41300C319CC /* TabBarViewController.swift in Sources */,
 				577118D722037ABA00B9DD0B /* NetworkHelper.swift in Sources */,
 				577118C32203796A00B9DD0B /* ViewController.swift in Sources */,
 				577118C12203796A00B9DD0B /* AppDelegate.swift in Sources */,
+				BF60BD992204A47F00C319CC /* ProfileViewController.swift in Sources */,
 				577118D522037A9F00B9DD0B /* AppError.swift in Sources */,
 				577118DA22037B5B00B9DD0B /* DataPersistenceManager.swift in Sources */,
+				BF60BD932204A44600C319CC /* QuizViewController.swift in Sources */,
 				577118DF22037BAA00B9DD0B /* String+DateExtensions.swift in Sources */,
 				577118DD22037B8E00B9DD0B /* Date+Extensions.swift in Sources */,
 			);
@@ -335,14 +363,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZEKMNK5YD3;
+				DEVELOPMENT_TEAM = 2X456QR9DN;
 				INFOPLIST_FILE = Quizzes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexcpaul.Quizzes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pritesh.Quizzes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,14 +382,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZEKMNK5YD3;
+				DEVELOPMENT_TEAM = 2X456QR9DN;
 				INFOPLIST_FILE = Quizzes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexcpaul.Quizzes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pritesh.Quizzes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
