@@ -8,11 +8,8 @@
 
 import Foundation
 
-struct Quiz : Codable {
-    let QuizInfoUnwrap : QuizInfo
-}
 
-struct QuizInfo : Codable {
+struct Quiz: Codable {
     let id : String
     let quizTitle : String
     let facts : [String]

@@ -30,6 +30,10 @@
 		BF60BDA62204AB6400C319CC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDA52204AB6400C319CC /* ProfileView.swift */; };
 		BF60BDA82204AB8200C319CC /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDA72204AB8200C319CC /* Quiz.swift */; };
 		BF60BDAB2204AE3C00C319CC /* QuizAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDAA2204AE3C00C319CC /* QuizAPIClient.swift */; };
+		BF60BDAD2204BFAE00C319CC /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDAC2204BFAE00C319CC /* QuizCollectionViewCell.swift */; };
+		BF60BDB02204F9A800C319CC /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDAF2204F9A800C319CC /* ProfileTableViewCell.swift */; };
+		BF60BDB222060DF500C319CC /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDB122060DF500C319CC /* SearchCollectionViewCell.swift */; };
+		BF60BDB4220621FC00C319CC /* QuizDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDB3220621FC00C319CC /* QuizDetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		BF60BDA52204AB6400C319CC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BF60BDA72204AB8200C319CC /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		BF60BDAA2204AE3C00C319CC /* QuizAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAPIClient.swift; sourceTree = "<group>"; };
+		BF60BDAC2204BFAE00C319CC /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF60BDAF2204F9A800C319CC /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		BF60BDB122060DF500C319CC /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF60BDB3220621FC00C319CC /* QuizDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,7 @@
 				BF60BDA12204AB4700C319CC /* SearchView.swift */,
 				BF60BDA32204AB5400C319CC /* CreateView.swift */,
 				BF60BDA52204AB6400C319CC /* ProfileView.swift */,
+				BF60BDAE2204BFB300C319CC /* View Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +181,17 @@
 				BF60BDA72204AB8200C319CC /* Quiz.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BF60BDAE2204BFB300C319CC /* View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF60BDAC2204BFAE00C319CC /* QuizCollectionViewCell.swift */,
+				BF60BDB3220621FC00C319CC /* QuizDetailCollectionViewCell.swift */,
+				BF60BDAF2204F9A800C319CC /* ProfileTableViewCell.swift */,
+				BF60BDB122060DF500C319CC /* SearchCollectionViewCell.swift */,
+			);
+			path = "View Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,15 +268,19 @@
 				BF60BD972204A47600C319CC /* CreateViewController.swift in Sources */,
 				BF60BD952204A46300C319CC /* SearchViewController.swift in Sources */,
 				BF60BDA42204AB5400C319CC /* CreateView.swift in Sources */,
+				BF60BDB02204F9A800C319CC /* ProfileTableViewCell.swift in Sources */,
 				BF60BD902204A41300C319CC /* TabBarViewController.swift in Sources */,
 				577118D722037ABA00B9DD0B /* NetworkHelper.swift in Sources */,
 				BF60BDA02204AB3600C319CC /* QuizDetailView.swift in Sources */,
 				577118C32203796A00B9DD0B /* ViewController.swift in Sources */,
+				BF60BDB4220621FC00C319CC /* QuizDetailCollectionViewCell.swift in Sources */,
 				577118C12203796A00B9DD0B /* AppDelegate.swift in Sources */,
 				BF60BD992204A47F00C319CC /* ProfileViewController.swift in Sources */,
+				BF60BDB222060DF500C319CC /* SearchCollectionViewCell.swift in Sources */,
 				577118D522037A9F00B9DD0B /* AppError.swift in Sources */,
 				BF60BDA62204AB6400C319CC /* ProfileView.swift in Sources */,
 				577118DA22037B5B00B9DD0B /* DataPersistenceManager.swift in Sources */,
+				BF60BDAD2204BFAE00C319CC /* QuizCollectionViewCell.swift in Sources */,
 				BF60BDAB2204AE3C00C319CC /* QuizAPIClient.swift in Sources */,
 				BF60BD932204A44600C319CC /* QuizViewController.swift in Sources */,
 				BF60BD9D2204AB0E00C319CC /* QuizzView.swift in Sources */,

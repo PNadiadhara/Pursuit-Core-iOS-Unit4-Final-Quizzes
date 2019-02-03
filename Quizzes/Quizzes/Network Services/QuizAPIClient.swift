@@ -9,7 +9,7 @@
 import Foundation
 
 final class QuizAPIClient {
-    static func getQuiz (completionHandler: @escaping (AppError?, QuizInfo?) -> Void) {
+    static func getQuiz (completionHandler: @escaping (AppError?, [Quiz]?) -> Void) {
         let endpointURLString = "http://5c4d4c0d0de08100147c59b5.mockapi.io/api/v1/quizzes"
         guard let url = URL(string: endpointURLString) else {
             completionHandler(AppError.badURL(endpointURLString), nil)
@@ -26,8 +26,8 @@ final class QuizAPIClient {
             }
             if let data = data {
                 do {
-                    let quizzes = try JSONDecoder().decode(Quiz.self, from: data)
-                    completionHandler(nil, quizzes.QuizInfoUnwrap)
+                    let quizzes = try JSONDecoder().decode([Quiz].self, from: data)
+                    completionHandler(nil, quizzes)
                 } catch {
                     completionHandler(AppError.jsonDecodingError(error), nil)
                 }
