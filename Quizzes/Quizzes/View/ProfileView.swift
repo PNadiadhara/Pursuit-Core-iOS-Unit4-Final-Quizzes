@@ -15,6 +15,11 @@ class ProfileView: UIView {
         return tableView
     }()
     
+    lazy var loginTextField : UITextField = {
+        let textfield = UITextField()
+        return textfield
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)
         setTableViewConstraints()

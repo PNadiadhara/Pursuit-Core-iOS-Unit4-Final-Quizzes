@@ -34,6 +34,9 @@
 		BF60BDB02204F9A800C319CC /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDAF2204F9A800C319CC /* ProfileTableViewCell.swift */; };
 		BF60BDB222060DF500C319CC /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDB122060DF500C319CC /* SearchCollectionViewCell.swift */; };
 		BF60BDB4220621FC00C319CC /* QuizDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDB3220621FC00C319CC /* QuizDetailCollectionViewCell.swift */; };
+		BF60BDB622081E2E00C319CC /* UserProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDB522081E2E00C319CC /* UserProfiles.swift */; };
+		BF60BDB82208E79900C319CC /* UserFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDB72208E79900C319CC /* UserFileManager.swift */; };
+		BF60BDBA2208EC3100C319CC /* UserCreatedQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60BDB92208EC3100C319CC /* UserCreatedQuiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		BF60BDAF2204F9A800C319CC /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		BF60BDB122060DF500C319CC /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF60BDB3220621FC00C319CC /* QuizDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF60BDB522081E2E00C319CC /* UserProfiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfiles.swift; sourceTree = "<group>"; };
+		BF60BDB72208E79900C319CC /* UserFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFileManager.swift; sourceTree = "<group>"; };
+		BF60BDB92208EC3100C319CC /* UserCreatedQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreatedQuiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				577118D922037B5B00B9DD0B /* DataPersistenceManager.swift */,
+				BF60BDB72208E79900C319CC /* UserFileManager.swift */,
 			);
 			path = "File Manager Helpers";
 			sourceTree = "<group>";
@@ -179,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				BF60BDA72204AB8200C319CC /* Quiz.swift */,
+				BF60BDB522081E2E00C319CC /* UserProfiles.swift */,
+				BF60BDB92208EC3100C319CC /* UserCreatedQuiz.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +284,8 @@
 				577118C32203796A00B9DD0B /* ViewController.swift in Sources */,
 				BF60BDB4220621FC00C319CC /* QuizDetailCollectionViewCell.swift in Sources */,
 				577118C12203796A00B9DD0B /* AppDelegate.swift in Sources */,
+				BF60BDB82208E79900C319CC /* UserFileManager.swift in Sources */,
+				BF60BDBA2208EC3100C319CC /* UserCreatedQuiz.swift in Sources */,
 				BF60BD992204A47F00C319CC /* ProfileViewController.swift in Sources */,
 				BF60BDB222060DF500C319CC /* SearchCollectionViewCell.swift in Sources */,
 				577118D522037A9F00B9DD0B /* AppError.swift in Sources */,
@@ -286,6 +297,7 @@
 				BF60BD9D2204AB0E00C319CC /* QuizzView.swift in Sources */,
 				BF60BDA22204AB4700C319CC /* SearchView.swift in Sources */,
 				BF60BDA82204AB8200C319CC /* Quiz.swift in Sources */,
+				BF60BDB622081E2E00C319CC /* UserProfiles.swift in Sources */,
 				BF60BD9B2204AACD00C319CC /* QuizDetailViewController.swift in Sources */,
 				577118DF22037BAA00B9DD0B /* String+DateExtensions.swift in Sources */,
 				577118DD22037B8E00B9DD0B /* Date+Extensions.swift in Sources */,

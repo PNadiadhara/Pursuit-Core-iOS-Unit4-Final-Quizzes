@@ -8,11 +8,19 @@
 
 import UIKit
 
+protocol SearchCollectionCellDelegate : AnyObject {
+    func saveButton(_ searchCollectionCell: SearchCollectionViewCell, storedQuiz: Quiz)
+}
+
 class SearchCollectionViewCell: UICollectionViewCell {
+    
+    weak var delegate: SearchCollectionCellDelegate?
+    private var currentQuiz: Quiz!
     
     lazy var quizTitle : UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.numberOfLines = 0
         
         return label
     }()
@@ -20,9 +28,13 @@ class SearchCollectionViewCell: UICollectionViewCell {
     lazy var quizOptionsButton : UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "add-icon-filled"), for: .normal)
-        
+        button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
         return button
     }()
+    
+    @objc func saveButtonPressed() {
+        delegate?.saveButton(self, storedQuiz: currentQuiz)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)

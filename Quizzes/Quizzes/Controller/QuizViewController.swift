@@ -12,15 +12,14 @@ class QuizViewController: UIViewController {
     
     let quizView = QuizzView()
     
+    var userSavedArrays = [UserCreatedQuiz]() {
+        didSet{
+        DispatchQueue.main.async {
+            self.quizView.quizCollectionView.reloadData()
+        }
+        }
+    }
     
-    
-    //    var bestSellingBooks = [Book]() {
-    //        didSet {
-    //            DispatchQueue.main.async {
-    //                self.bestSellers.bestSellerCollectionView.reloadData()
-    //            }
-    //        }
-    //    }
     
 
     override func viewDidLoad() {
@@ -33,29 +32,27 @@ class QuizViewController: UIViewController {
         quizView.quizCollectionView.register(QuizCollectionViewCell.self, forCellWithReuseIdentifier: "QuizCell")
     }
     
-    //This function is for use in SearchViewController, here for data testing purpose
-    func getQuizOnline() {
-        QuizAPIClient.getQuiz { (error, data) in
-            if let error = error {
-                print(error)
-            } else if let data = data {
-//                self.quizList = data
-            }
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
     }
-
+    
+    func getDataFromDocumentsDirectory() {
+        self.userSavedArrays = UserQuizzesFileManager.getFavoriteQuizzes()
+        self.quizView.quizCollectionView.reloadData()
+    }
 
 
 }
 
 extension QuizViewController : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return userSavedArrays.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = quizView.quizCollectionView.dequeueReusableCell(withReuseIdentifier: "QuizCell", for: indexPath) as? QuizCollectionViewCell else { return UICollectionViewCell()}
-        cell.quizTitle.text = "Place Holder"
+        cell.quizTitle.text = userSavedArrays[indexPath.row].quizTitle
         return cell
         
     }
@@ -65,8 +62,7 @@ extension QuizViewController : UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detail = QuizDetailViewController()
-        self.navigationController?.pushViewController(detail, animated: true)
+        
     }
     
     

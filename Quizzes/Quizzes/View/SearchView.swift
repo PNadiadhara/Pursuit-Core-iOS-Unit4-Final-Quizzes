@@ -9,6 +9,8 @@
 import UIKit
 
 class SearchView: UIView {
+    
+
 
     lazy var searchCollectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()

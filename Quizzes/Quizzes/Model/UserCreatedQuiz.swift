@@ -1,20 +1,16 @@
 //
-//  Quiz.swift
+//  UserCreatedQuiz.swift
 //  Quizzes
 //
-//  Created by Pritesh Nadiadhara on 2/1/19.
+//  Created by Pritesh Nadiadhara on 2/4/19.
 //  Copyright © 2019 Alex Paul. All rights reserved.
 //
 
 import Foundation
 
-
-struct Quiz: Codable {
+struct UserCreatedQuiz : Codable {
     let id : String
     let quizTitle : String
     let facts : [String]
+    let createdAt: String
 }
-
-
-//THIS IS HOW JSON DATA IS FORMATTED
-

@@ -10,8 +10,8 @@ import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
     
-    lazy var profileName: UILabel = {
-        let label = UILabel()
+    lazy var profileName: UIButton = {
+        let label = UIButton()
         return label
     }()
     //This Should be a button that allows image to be set

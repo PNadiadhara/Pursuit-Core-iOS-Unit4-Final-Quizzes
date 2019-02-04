@@ -14,6 +14,16 @@ class QuizDetailCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.textAlignment = .center
         label.text = "Title and fact goes here"
+        label.numberOfLines = 0
+        
+        return label
+    }()
+    
+    lazy var quizFact : UITextView = {
+        let label = UITextView()
+        label.textAlignment = .center
+        label.text = "Title and fact goes here"
+        
         
         return label
     }()
@@ -21,6 +31,7 @@ class QuizDetailCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)
         setupQuizTitleConstraints()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,5 +50,7 @@ class QuizDetailCollectionViewCell: UICollectionViewCell {
             ].forEach {$0.isActive = true}
         
     }
+    
+ 
     
 }
